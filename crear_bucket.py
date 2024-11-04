@@ -27,10 +27,10 @@ def lambda_handler(event, context):
         s3.put_public_access_block(
             Bucket=bucket_name,
             PublicAccessBlockConfiguration={
-                'BlockPublicAcls': True,
-                'IgnorePublicAcls': True,
-                'BlockPublicPolicy': True,
-                'RestrictPublicBuckets': True
+                'BlockPublicAcls': False,
+                'IgnorePublicAcls': False,
+                'BlockPublicPolicy': False,
+                'RestrictPublicBuckets': False
             }
         )
 
